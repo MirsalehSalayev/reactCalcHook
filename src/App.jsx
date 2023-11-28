@@ -10,9 +10,9 @@ function App() {
   return (
     <>
 
-      {/* <Axios /> */}
+      <Axios />
       {/* <LocalCustom /> */}
-      <Calc />
+      {/* <Calc /> */}
     </>
 
 

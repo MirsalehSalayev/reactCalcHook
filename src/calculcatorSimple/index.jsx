@@ -14,15 +14,11 @@ const Calc = () => {
             setError(null);
             setValue(value);
         }
-
-
-
-
     };
 
     const calculate = (operation) => {
         if (value1 === '' || value2 === '') {
-            setError('bu niyə boşdu');
+            setError('Bunədiəə');
             return;
         }
         let res;
@@ -61,8 +57,8 @@ const Calc = () => {
                 <button onClick={() => calculate('divide')}>divide</button>
                 <button onClick={() => calculate('multiply')}>multiply</button>
             </div>
-            {error && <p>{error}</p>}
-            {result && <p>Result: {result}</p>}
+            {<p>{error}</p>}
+            {<p>Result: {result}</p>}
         </div>
     )
 }
